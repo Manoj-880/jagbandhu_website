@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    /* padding-top: 10vh; */
+}
+
+/* nav bar css */
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #EDF2F6;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black;  */
+    /* background-color: blue; */
+    height: 10vh;
+    position: fixed;
+}
+
+.brand{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-name{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #026FBF;
+}
+
+.nav-links{
+    padding-top: 1rem;
+    display: block;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-item{
+    font-size: 1rem;
+    color: #026FBF;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.dnl-button{
+    display: block;
+}
+
+.dnl-button button{
+    border: 1px solid #026FBF;
+    padding: 0.2rem;
+    border-radius: 10px;
+    color: #026FBF;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.dnl-button button:hover{
+    background-color: #026FBF;
+    color: #fff;
+}
+
+.menu{
+    color: #026FBF;
+    display: none;
+    z-index: 10;
+}
+
+/* hero section css */
+
+#hero{
+    background-color: #EDF2F6;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-text .text{
+    font-size: 4rem;
+    color: #4b4b4b;
+    font-weight: 500;
+}
+
+.hero-text .text span{
+    color: #026FBF;
+}
+
+.hero-button button{
+    border: 2px solid #026FBF;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #026FBF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.2rem;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+/* about section css */
+
+#about{
+    background-image:url('assets/bg_animation.gif');
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content{
+    background-color: rgba(255,255,255,0.4);
+    height: 100%;
+    padding-top: 11vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.abt-sec-head{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2%;
+    background-color: #fff;
+    color: #4b4b4b;
+    text-align: start;
+}
+
+.abt-sec-head span{
+    color: #026FBF;
+}
+
+.abt-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.event-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.event{
+    background-color: #FFC3FA;
+    margin-top: 20vh;
+    margin-bottom: 0;
+}
+
+.tree{
+    background-color: #C2EEFF;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.circle{
+    background-color: #C8BAFF;
+    margin-top: 0;
+    margin-bottom: 20vh;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-head{
+    font-size: 1.5rem;
+    color: #4b4b4b;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-des{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 576px) {
+    .hero-text{
+        gap: 4rem;
+    }
+    .hero-text .text{
+        font-size: 3rem;
+    }
+    .abt-sec-head{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu{
+        display:block;
+    }
+    .dnl-button, .nav-links{
+        display: none;
+    }
+    .hero-img{
+        display: none;
+    }
+    .hero-text .text{
+        font-size: 3rem;
+    }
+    .event, .tree, .circle{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .abt-cards{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 1400px) {
+    
+}
