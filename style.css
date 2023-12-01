@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-section {
-  height: 100vh;
-  /* padding-top: 10vh; */
-}
 
 /* nav bar css */
 nav {
@@ -88,7 +84,6 @@ nav {
   padding-left: 5rem;
   padding-right: 5rem;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -101,13 +96,15 @@ nav {
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+  padding-top: 3rem;
 }
 
 .hero-text .text {
   font-size: 4rem;
   color: #4b4b4b;
   font-weight: 500;
+  line-height: 5rem;
 }
 
 .hero-text .text span {
@@ -143,8 +140,8 @@ nav {
   background-size: cover;
   background-repeat: repeat-x;
   display: flex;
-  align-items: center;
   justify-content: center;
+  /* height: auto; */
 }
 
 .about-content {
@@ -229,18 +226,24 @@ nav {
 
 /* features section css */
 
+#features{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .features-content{
-    height: 100%;
-    padding-top: 11vh;
-    padding-left: 5rem;
-    padding-right: 5rem;
+  padding-top: 11vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-sec-head{
     font-size: 2rem;
     font-weight: 700;
     margin-top: 2%;
-    background-color: #fff;
     color: #4b4b4b;
     text-align: start;
 }
@@ -250,11 +253,92 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
+}
+
+.features{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-component{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #4b4b4b;
+  margin: 2%;
+}
+
+.feature_icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1E548;
+}
+
+.feature-heading{
+  font-size: 1.3rem;
+
+}
+
+.feature-description{
+  margin-top: -1rem;
+  font-size: 0.8rem;
+}
+
+
+/* our app css */
+
+#our-app{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding-bottom: 5rem;
+}
+
+.our-app-content{
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  padding-top: 11vh;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.our-app-text{
+  background-color: #fff;
+  height: fit-content;
+  align-self: center;
+  padding-right: 1rem;
+}
+
+.our-app-text h1{
+  font-size: 2.5rem;
+  color: #4b4b4b;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+.our-app-text h1 span{
+  color: #026fbf;
 }
 
 /* media queries */
 
 @media (max-width: 576px) {
+
   .hero-text {
     gap: 4rem;
   }
@@ -264,6 +348,15 @@ nav {
   .abt-sec-head {
     font-size: 2.5rem;
     text-align: center;
+  }
+  .our-app-content{
+    flex-direction: column;
+  }
+  .our-app-text h1{
+    font-size: 1rem;
+  }
+  #hero, #about, #features, #our-app{
+    align-items: start;
   }
 }
 
@@ -290,13 +383,24 @@ nav {
   .abt-cards {
     flex-direction: column;
   }
+  .features-image{
+    display: none;
+  }
+  #hero, #about, #features, #our-app{
+    align-items: center;
+  }
 }
 
 @media (max-width: 992px) {
+  #about, #features{
+    height: 100vh;
+  }
 }
 
 @media (max-width: 1200px) {
+  
 }
 
 @media (max-width: 1400px) {
+  
 }
