@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 /* nav bar css */
 nav {
   display: flex;
@@ -90,7 +89,8 @@ nav {
 .hero-content {
   display: flex;
   flex-direction: row;
-  padding-top: 10vh;
+  padding-top: 30vh;
+  padding-bottom: 15vh;
 }
 
 .hero-text {
@@ -141,7 +141,6 @@ nav {
   background-repeat: repeat-x;
   display: flex;
   justify-content: center;
-  /* height: auto; */
 }
 
 .about-content {
@@ -150,6 +149,7 @@ nav {
   padding-top: 11vh;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-bottom: 15vh;
 }
 
 .abt-sec-head {
@@ -235,7 +235,7 @@ nav {
 }
 
 .features-content{
-  padding-top: 11vh;
+  padding-top: 15vh;
   display: flex;
   flex-direction: column;
 }
@@ -303,15 +303,17 @@ nav {
   display: flex;
   justify-content: center;
   height: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 15vh;
+  padding-top: 20vh;
 }
 
 .our-app-content{
   background-color: rgba(255, 255, 255, 0.4);
   height: 100%;
-  padding-top: 11vh;
+  padding-top: 5vh;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-bottom: 2vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -333,6 +335,143 @@ nav {
 
 .our-app-text h1 span{
   color: #026fbf;
+}
+
+
+/* contact section css */
+
+#contact{
+  padding-top: 10vh;
+  background-color: #fff;
+  text-align: center;
+}
+
+.divider hr{
+  width: 30%;
+}
+
+.footer{
+  background-color: #026fbf;
+  color: #fff;
+  height: 35vh;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.divider{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.divider p{
+  margin-top: 1rem;
+}
+
+.copyright{
+  text-align: left;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.copyright a{
+  color: #fff;
+}
+
+.footer-details{
+  width: 100%;
+  display: block;
+  height: 80%;
+}
+
+.footer-details img{
+  width: 15%;
+  float: left;
+  margin-right: 20rem;
+}
+
+.footer-contact-details{
+  display: inline;
+  float: left;
+  text-align: start;
+  margin-right: 20rem;
+}
+
+.footer-contact-details i{
+  float: left;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
+.footer-policies{
+  text-align: left;
+}
+
+.footer-policies a{
+  color: #fff;
+  display: block;
+}
+
+.contact-download h1{
+  font-size: 5rem;
+  font-weight: 600;
+  color: #4b4b4b;
+  /* margin-bottom: 1.5rem; */
+}
+
+.contact-download p{
+  font-size: 1.5rem;
+}
+
+.contact-download button{
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  border: 2px solid #026fbf;
+  color: #026fbf;
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.contact-download button:hover{
+  background-color: #026fbf;
+  color: #fff;
+}
+
+.contact-download h1 span{
+  color: #026fbf;
+}
+
+/* terms and conditions, privacy policies */
+
+.terms_and_conditions, .policy-container{
+  margin: 5vh 15vw 5vh 15vw;
+}
+
+.policy-container a{
+  color: black;
+  text-decoration: none;
+}
+
+.file-heading{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.terms_and_conditions h2{
+  margin: 1rem 0;
+}
+
+.terms_and_conditions h4{
+  margin: 0.5rem 0;
 }
 
 /* media queries */
